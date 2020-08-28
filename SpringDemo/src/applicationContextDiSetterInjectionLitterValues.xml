@@ -7,21 +7,14 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	
     <!-- Define your beans here -->
     
     <!-- define the dependency -->
-      <bean id="fortuneService"
-        class="com.springDemo.DI_SettersInjection.LiteralValues.HappyFortuneService">
-    </bean>
  	    <bean id="trackCoach"
-        class="com.springDemo.DI_SettersInjection.LiteralValues.TrackCoach">  
-           <property name="fortuneService" ref="fortuneService"></property>  
+           class="com.springDemo.DI_SettersInjection.literalValues.TrackCoach">  
            <property name="Email" value="archanakl.05@gmail.com"></property> 
            <property name="Team" value="Sunrises Hyderabad"></property>
     </bean>
-    
-
 </beans>
 
 
